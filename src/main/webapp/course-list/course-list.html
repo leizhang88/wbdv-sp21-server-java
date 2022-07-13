@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link href="../styles.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../services/course.service.client.js"></script>
+    <script src="course-list.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <h1>Course List</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Section</th>
+                <th>Seats</th>
+                <th>Semester</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="form-control wbdv-title-fld" id="title"/>
+                </td>
+                <td>
+                    <input class="form-control wbdv-section-fld" id="section"/>
+                </td>
+                <td>
+                    <input type="number" class="form-control wbdv-seats-fld" id="seats"/>
+                </td>
+                <td>
+                    <select class="form-select wbdv-semester-fld" id="semester">
+                        <option>Spring</option>
+                        <option>Summer</option>
+                        <option>Fall</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" class="btn wbdv-course-update-btn">Update</button>
+                    <button type="button" class="btn btn-outline-primary wbdv-course-add-btn">Add</button>
+                </td>
+            </tr>
+        </thead>
+        <tbody class="wbdv-course-table-body">
+            <tr>
+                <td>Algorithm</td>
+                <td>01</td>
+                <td>153</td>
+                <td>Fall</td>
+                <td>
+                    <button type="button" class="btn">Select</button>
+                    <button type="button" class="btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Algorithm</td>
+                <td>01</td>
+                <td>153</td>
+                <td>Fall</td>
+                <td>
+                    <button type="button" class="btn">Select</button>
+                    <button type="button" class="btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Algorithm</td>
+                <td>01</td>
+                <td>153</td>
+                <td>Fall</td>
+                <td>
+                    <button type="button" class="btn">Select</button>
+                    <button type="button" class="btn">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
