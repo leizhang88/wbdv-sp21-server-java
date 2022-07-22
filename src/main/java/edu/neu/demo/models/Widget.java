@@ -1,11 +1,22 @@
 package edu.neu.demo.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String topicId;
     private String type;
     private Integer size;
     private String text;
+    private Integer width;
+    private Integer height;
+    private String src;
 
     public Widget() {
     }
